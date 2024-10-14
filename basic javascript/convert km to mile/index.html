@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>convert km to mile</title>
+    <style>
+        body{
+            min-height: 100vh;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>contvert km to mile</h1>
+    <h2>factor = 0.621371</h2>
+    <br>
+    <input type="text"  id="km">
+    <label for="km">km</label>
+    <br>
+
+    <br>
+    <br>
+    <button id="convert">convert</button>
+    <br>
+    <br>
+    <div class="ans"></div>
+</body>
+<script>
+    let factor = 0.621371
+    const km = document.getElementById("km").value
+
+  
+
+    const btn = document.querySelector("#convert")
+    const ans = document.querySelector(".ans")
+    btn.addEventListener("click",()=>{
+        mile = km * factor;
+ans.innerText = `${mile} miles`
+    })
+</script>
+</html>

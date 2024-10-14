@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>connect 4 master game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="cover-game ">
+    <div class="text">
+    <h1>welcome to game world</h1>
+</div>
+
+<div class="animate-box">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <div class="border-aniamte-box">
+        <button class="start-game">start game</button>
+    </div>
+</div>
+</div>
+
+<div class="container active">
+    <form action="#" class="form">
+     <div class="text-box">
+        <h2>enter players names</h2>
+        <h3>choose color</h3>
+     </div>   
+     <div class="user-box">
+        <div class="one">
+        <div class="input-box success" >
+            <input type="text" placeholder="player-1" class="firstname">
+            <div class="error"></div>
+         
+        </div>
+        <div class="input-box success">
+            <input type="color" class="firstcolor">
+            <div class="error"></div>
+         
+        </div>
+    </div>
+
+        <div class="vs">vs</div>
+        <div class="one">
+        <div class="input-box success">
+            <input type="text" placeholder="player-2" class="secondname"> 
+            <div class="error"></div>
+           
+        </div>
+        <div class="input-box success">
+            <input type="color" class="secondcolor">
+            <div class="error"></div>
+           
+        </div>
+    </div>
+     </div>
+     <button class="submit">submit</button>
+    </form>
+    
+    <div class="game-body active">
+        <div class="user-info">
+            <h2>connect-4 master game</h2>
+            <div class="player-box">
+                <div class="player">
+                    
+                    <span class="firstplayer">first</span>
+                    <span class="color1"></span>
+                </div>
+                <div class="player">
+                    <span class="vst">vs</span>
+                </div>
+                <div class="player">
+
+                    <span class="secondplayer">second</span>
+                    <span class="color2"></span>
+                </div>
+            </div>
+            <div class="playerchance">first</div>
+        </div>
+        <div class="connect-4-game">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+    </div>
+    <div class="winning-box-background active">
+        <div class="celebrate"></div>
+        <div class="winning-box active">
+            <h2>Congratulation 
+            <span class="winer-name">winner name</span> </h2>
+            <button class="restart ">Restart game</button>
+        </div>
+        <div class="winner-play active">
+            
+        </div>
+
+    </div>
+</div>
+
+</body>
+<script src="script.js"></script>
+</html>

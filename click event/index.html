@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>click event</title>
+    <style>
+body{
+    min-height: 100vh;
+   font-family: sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+}
+h2,h3,h4,h5{
+    display: none;
+}
+    </style>
+</head>
+<body>
+    <h1>about click event</h1>
+    <div class="box">
+        <button class="btn">clickme 1</button>
+        <button class="btn2">clickme 2</button>
+        <button class="btn3">clickme 3</button>
+        <button class="btn4">clickme 4</button>
+    </div>
+    <h2>first show me</h1>
+    <h3>second show me</h2>
+    <h4>third show me</h3>
+    <h5>fourth show me</h4>
+  
+
+</body>
+<script>
+    const h2 = document.querySelector("h2")
+    const h3 = document.querySelector("h3")
+    const h4 = document.querySelector("h4")
+    const h5 = document.querySelector("h5")
+const btn1 =document.querySelector(".btn")
+const btn2 =document.querySelector(".btn2")
+const btn3 =document.querySelector(".btn3")
+const btn4 =document.querySelector(".btn4")
+
+btn1.addEventListener("click",()=>{
+h2.style.display="block"
+})
+btn2.addEventListener("click",()=>{
+h3.style.display="block"
+})
+btn3.addEventListener("click",()=>{
+h4.style.display="block"
+})
+btn4.addEventListener("click",()=>{
+h5.style.display="block"
+})
+</script>
+</html>

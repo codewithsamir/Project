@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    min-height: 100vh;
+    background-color: rgb(6, 136, 93);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+input{
+    padding: 10px ;
+    font-size: 1.3rem;
+}
+#btn{
+    padding: 10px 40px;
+    font-size: 1.2rem;
+}
+#answer{
+    font-size: 1.5rem;
+}
+h1{
+    font-size: 2rem;
+    color: #fff;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+    </style>
+</head>
+<body>
+    <h1>prime number</h1>
+    <br>
+    <input type="text" id="input">
+    <button id="btn">check</button>
+    <h2 id="answer"></h2>
+</body>
+<script>
+const input = document.getElementById("input")
+const btn = document.getElementById("btn")
+const answer = document.getElementById("answer")
+
+btn.addEventListener("click",checkprimenumber)
+
+function checkprimenumber(){
+    const input = document.getElementById("input").value
+let temp =0;
+
+for(let i=1;i<=input ; i++){
+    if(input % i == 0){
+        temp++;
+    }
+    if(temp == 2){
+        answer.innerText = `it is a prime number ${input}`
+    }
+    else{
+        answer.innerText = `it is not a prime number ${input}`
+    }
+}
+
+}
+</script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add two number</title>
+</head>
+<body>
+<input type="text" id="first">
+<span>+</span>
+<input type="text" id="second">
+<button id="add">Add</button>
+<h2 id="ans"></h2>
+</body>
+<script>
+    const first =document.getElementById("first").value
+    const second =document.getElementById("second").value
+    const add = document.getElementById("add")
+  const ans = document.getElementById("ans")
+
+    add.addEventListener("click",()=>{
+        ans.innerText= parseInt(first) + parseInt(second)
+    })
+</script>
+</html>

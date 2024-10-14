@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    min-height: 100vh;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    width: 800px;
+    height: auto;
+    /* background-color: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    padding: 20px;
+}
+h1{
+    margin-bottom: 30px;
+    font-size: 3rem;
+    background-color: #fff;
+
+}
+.box {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.ball{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+.ball:nth-child(1){
+    background-color: red;
+}
+.ball:nth-child(2){
+    background-color: rgb(234, 255, 0);
+}
+.ball:nth-child(3){
+
+    background-color: rgb(30, 0, 255);
+}
+.ball:nth-child(4){
+  
+    background-color: rgb(68, 255, 0);
+}
+.ball:nth-child(5){
+    background-color: rgb(251, 0, 255);
+}

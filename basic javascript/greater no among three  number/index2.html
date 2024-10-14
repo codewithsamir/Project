@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>check greater num between three num</title>
+    <style>
+        body {
+            min-height: 100vh;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>check greater num between three num</h1>
+    <br>
+    <br>
+<input type="text" id="first">
+<br>
+<br>
+<input type="text" id="second">
+<br>
+<br>
+<input type="text" id="third">
+<br>
+<br>
+<button id="btn">check</button>
+<br>
+<br>
+<h1 id="ans"></h1>
+</body>
+<script>
+     const x = parseInt(document.getElementById("first").value)
+     const y = parseInt(document.getElementById("second").value)
+     const z = parseInt(document.getElementById("third").value)
+     const btn = document.getElementById("btn")
+     const ans = document.getElementById("ans")
+
+
+function check(a,b,c){
+if(a>b && a>c){
+    return a;
+}
+else if(b> a && b>c){
+    return b;
+}
+else{
+    return c;
+}
+
+}
+
+btn.addEventListener("click",()=>{
+
+let show = check(x,y,z)
+ans.innerText = `${x}, ${y}, ${z} \n the greatest num is ${show} `
+
+})
+
+
+
+</script>
+
+</html>

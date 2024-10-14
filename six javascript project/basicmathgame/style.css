@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    min-height: 100vh;
+    background: url("https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2Nob29sJTIwbWF0aHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 600px;
+    height: 400px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+h1{
+    margin-bottom: 30px;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: capitalize;
+   
+
+}
+.btn-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.btn-box button{
+  padding:  10px 20px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  border: none;
+  text-transform: capitalize;
+}
+.btn-box button:nth-child(1){
+background-color: red;
+}
+.btn-box button:nth-child(2){
+background-color: rgb(0, 255, 51);
+}
+.btn-box button:nth-child(3){
+background-color: rgb(0, 128, 255);
+}
+.btn-box button:nth-child(4){
+background-color: rgb(195, 0, 255);
+}
+.btn-box button a{
+ text-decoration: none;
+ color: #fff;
+}
+
+.game-display{
+    background: #fff;
+    padding: 20px;
+    width: 800px;
+    height: auto;
+
+}
+.game-display h2{
+text-align: center;
+font-size: 3rem;
+margin-bottom: 40px;
+text-transform: capitalize;
+border-bottom: 2px solid rgb(14, 255, 114);
+}
+.game-display .box{
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.game-display .box .first{
+   width: 120px;
+   height: 120px;
+   border: 2px solid red;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 3rem;
+}
+.game-display .box .sec{
+   width: 120px;
+   height: 120px;
+   border: 2px solid rgb(0, 255, 123);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 3rem;
+}
+.game-display .box span{
+ font-size: 3rem;
+}
+.game-display .box input{
+ font-size: 2rem;
+ width:220px;
+ padding: 20px 10px;
+}
+.game-display .box button{
+ padding: 22px;
+ background: rgb(248, 184, 6);
+ font-size: 1.6rem;
+ color: #fff;
+ border: none;
+ cursor: pointer;
+}
+.game-display .home{
+padding: 20px ;
+font-size: 1.4rem;
+margin-top: 40px;
+background-color: red;
+border: none;
+color: #fff;
+cursor: pointer;
+}

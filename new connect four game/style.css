@@ -1,0 +1,20 @@
+
+table {
+  border-collapse: collapse; /* removes the spaces between cells */
+}
+td {
+  width: 50px; /* sets the width of each cell */
+  height: 50px; /* sets the height of each cell */
+  border: 1px solid black; /* adds a border around each cell */
+  text-align: center; /* centers the text in the cell */
+  vertical-align: bottom; /* aligns the text to the bottom of the cell */
+}
+
+.red {
+    background-color: red; /* sets the background color to red for cells marked as red */
+  }
+  
+  .yellow {
+    background-color: yellow; /* sets the background color to yellow for cells marked as yellow */
+  }
+  

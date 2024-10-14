@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text typing of input box</title>
+    <style>
+body{
+    min-height: 100vh;
+    background-color: rgb(5, 240, 103);
+    
+}
+h1{
+    text-align: center;
+    font-size: 4rem;
+    font-family: sans-serif;
+}
+input{
+    border: 2px solid #fff;
+    width: 80%;
+    padding: 10px;
+    font-size: 1.3rem;
+
+}
+.result{
+    font-size: 2rem;
+    color: black;
+    border-bottom: 2px solid #fff;
+ 
+  
+}
+    </style>
+</head>
+<body>
+    <h1>text typing inside input box and see outside at same time</h1>
+    <br>
+    <br>
+    <br>
+    <input type="text">
+    <br>
+    <br>
+    <br>
+    <div class="result"></div>
+</body>
+<script>
+const input = document.querySelector("input")
+input.addEventListener("input",()=>{
+    let inputvalue = input.value
+    let result = document.querySelector(".result")
+    result.innerText = inputvalue
+})
+</script>
+</html>

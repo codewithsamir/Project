@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>print hello world</title>
+</head>
+<body>
+    <h1>welcome to javascript world!</h1>
+    <label for="num">enter number</label>
+    <input type="text" id="num">
+    <br>
+    <br>
+    <button onclick="fact()">factorial num</button>
+    <br>
+    <br>
+    <p id="res"></p>
+    <br>
+    <form action="#" name="myform" onsubmit="return validateform()">
+        <input type="text" name="fname">
+        <button type="submit">submit</button>
+    </form>
+    <h2>javascript confirm box</h2>
+    <button onclick="myfunciton()">try it</button>
+    <p id="test"></p>
+    <p id="screencolordisplay"></p>
+    <h2>javascript timing sample</h2>
+    <p>click on try it. wait 5 seconds and the page will alert hello how are you  </p>
+    <button onclick="setTimeout(myfunction,500)">try it</button>
+
+    <h2> javascript list number of method</h2>
+    <p>the toString() function converts a number to a string</p>
+    <p id="demo"></p>
+</body>
+<script>
+    // tentth
+    let x = 123;
+    document.getElementById("demo").innerText = x.toString() + `<br>`+(123).toString() + `<br>` + (100+25).toString()
+    // firt
+    // alert("hello world")
+    // second 
+    // function fact(){
+    //     let i,num,f;
+    //     f=1;
+    //     num = document.getElementById("num").value
+    //     for(i=1;i<=num;i++){
+    //         f=f*i;
+    //     }
+    //     document.getElementById("res").innerText = f;
+    // }
+// third
+// let today = new Date();
+// let dd = today.getDate()
+// let mm = today.getMonth()+1;
+// let yyy = today.getFullYear();
+// if(dd<10){
+//     dd="0"+dd;
+// }
+// if(mm<10){
+//     mm="0"+mm;
+// }
+// today= mm + '-' + dd + '-' + yyy;
+// today= mm + '/' + dd + '/' + yyy;
+// today= mm + '/' + dd + '/' + yyy;
+// alert(today)
+// 11-10-2021
+
+// 11/10/2021
+
+// 10-11-2021
+
+// 10/11/2021
+// fourth
+// function validateform(){
+//     let x = document.forms["myform"]["fname"].value
+//     if(x==""){
+//         alert("please enter your name")
+// return false;
+//     }
+
+// }
+// fifth
+// function myfunciton(){
+//     let txt;
+// if(confirm("please press a button")){
+//     txt = "you pressed  button"
+// }else{
+//     txt = "you pressed cancel button";
+// }
+// document.getElementById("test").innerText = txt;
+// }
+// eight
+// document.getElementById("screencolordisplay").innerText = "screen color depth is " + screen.colorDepth;
+function myfunction(){
+    alert("hello world")
+}
+</script>
+</html>

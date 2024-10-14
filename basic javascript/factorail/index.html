@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>factorail in javascript</title>
+<style>
+    body{
+        min-height: 100vh;
+        background: rgb(6, 105, 129);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    input{
+        padding: 10px ;
+        font-size: 1.5rem;
+    }
+    #btn{
+        padding: 10px 40px;
+        font-size: 1.2rem;
+    }
+    h1{
+        text-align: center;
+        font-family: sans-serif;
+        text-transform: capitalize;
+        
+    }
+    #value{
+        font-size: 2rem;
+    }
+</style>
+</head>
+<body>
+    <h1>factorial in javascript</h1>
+<br>
+<input type="text" id="input">
+<button id="btn">value</button>
+<br>
+<h2 id="value"></h2>
+
+</body>
+<script>
+    const btn = document.getElementById("btn")
+    const result = document.getElementById("value")
+    
+    btn.addEventListener("click",factorailnum)
+    
+    function factorailnum(){
+    const value = document.getElementById("input").value
+    let temp=1;
+
+    for(let i =1;i<=value;i++){
+        temp = temp * i;
+    }
+
+result.innerText = `${value} factorail is ${temp}`
+}
+
+</script>
+</html>

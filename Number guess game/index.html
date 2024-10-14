@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guess number game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="bacground-game ">
+            <img src="https://play-lh.googleusercontent.com/q5lSxwHjIThHOMU3V7k28vSunN9qBSX-XY53tBtEJON3vdBvByBLC46iyLwzvM8cImxs" >
+            <button class="startgame">start game</button>
+        </div>
+        <h1>welcome to game</h1>
+        <h2 class="point"></h2>
+        <div class="box userinput">
+            <input type="text" placeholder="guess number" class="inputbox">
+            <button class="btn">submit</button>
+        </div>
+        <div class="box success">
+            <div class="icon">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h2>Congratulation! <br>You win the game</h2>
+            <button class="btn replay">replay</button>
+        </div>
+        <div class="box failed">
+            <div class="icon">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <h2>your guess number is incorrect</h2>
+            <p class="errormss">error</p>
+            <button class="btn try">try again</button>
+        </div>
+    </div>
+</body>
+<script src="game2.js"></script>
+</html>

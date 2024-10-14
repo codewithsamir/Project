@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            min-height: 100vh;
+
+            font-family: sans-serif;
+            
+         
+            
+        }
+        .title{
+            text-align: center;
+       font-size: 3rem;
+       text-transform: capitalize;
+       margin-top: 50px;
+       margin-bottom: 10px;
+
+       
+        }
+        #content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 70%;
+            margin: 0 auto;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+     img{
+        width: 100%;
+        height:300px;
+       
+     }
+     .text{
+        margin-top: 20px;
+        text-transform: capitalize;
+     }
+     .text p{
+        margin-top: 10px;
+        
+     }
+     button{
+        padding: 10px 50px;
+        text-transform: capitalize;
+        background: red;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        margin-top: 10px;
+    
+     }
+        @media print{
+            body *{
+                display: none;
+            }
+           
+     
+#content, #content * {
+    display: block;
+    box-shadow: none;
+    width: 90%;
+}
+ #content button {
+    display: none;
+}
+}
+
+
+    </style>
+</head>
+<body>
+    <h1 class="title">print html page content</h1>
+  <div id="content">
+    <img src="https://images.unsplash.com/photo-1677638252372-bc53025387c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
+    <div class="text">
+        <h2>how to add print html content</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quaerat necessitatibus provident earum error at esse, sequi autem fuga praesentium sapiente perferendis delectus nobis expedita quia et, consectetur dolorem nihil? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel itaque recusandae, nemo dolores voluptatum odio repellendus eius at autem, expedita omnis dolor cupiditate harum impedit sequi illum quidem. Nam, consequatur.</p>
+    </div>
+    <button>print</button>
+</div>
+</body>
+<script>
+    const prints = document.querySelector("button")
+    prints.addEventListener("click",()=>{
+        print()
+    })
+</script>
+</html>

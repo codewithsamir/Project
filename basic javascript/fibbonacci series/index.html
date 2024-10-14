@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fibonacci series</title>
+    <style>
+body{
+    min-height: 100vh;
+    background: rgb(7, 141, 150);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contianer{
+    width: 80%;
+    height: 60%;
+    overflow: hidden;
+}
+input{
+    padding: 10px;
+    font-size: 1.2rem;
+    
+}
+h1{
+    text-align: center;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+#btn{
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.result{
+    font-size: 3rem;
+    width: 80%;
+    margin: auto;
+    text-overflow: clip;
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="contianer">
+        <h1>fibonacci series</h1>
+        <br>
+        <input type="text" id="input">
+        <button id="btn">generate</button>
+        <p class="result"></p>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>

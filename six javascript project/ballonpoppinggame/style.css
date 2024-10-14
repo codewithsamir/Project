@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    min-height: 100vh;
+    background: url("https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2Nob29sJTIwbWF0aHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    width: 400px;
+    height: auto;
+    background-color: #fff;
+    
+    padding: 20px;
+}
+.container.active{
+   display: none;
+}
+h1{
+    margin-bottom: 30px;
+    font-size: 3rem;
+
+}
+.ballon{
+    width: 80px;
+    height: 80px;
+    margin: 3px;
+ border-radius: 50%;
+ font-size: 1.4rem;
+ text-align: center;
+display: inline-block;
+}
+.ballon.active:nth-child(even){
+    background-color: rgb(255, 255, 255);
+ 
+}
+.ballon.active:nth-child(odd){
+    background-color: rgb(255, 255, 255);
+  
+}
+.ballon:nth-child(2n){
+    background-color: red;
+    color: red;
+}
+.ballon:nth-child(2n - 1){
+    background-color: rgb(0, 255, 17);
+    color: rgb(0, 255, 17);
+}
+.ballon:nth-child(3n){
+    background-color: rgb(0, 38, 255);
+    color:rgb(0, 38, 255) ;
+}
+.ballon:nth-child(3n - 1){
+    background-color: rgb(255, 0, 136);
+    color: rgb(255, 0, 136);
+}
+.ballon:nth-child(5n){
+    background-color: rgb(0, 170, 255);
+}
+.ballon:nth-child(9n){
+    background-color: rgb(255, 230, 0);
+    color: rgb(255, 230, 0);
+}
+.ballon:nth-child(8n){
+    background-color: rgb(255, 170, 0);
+    color: rgb(255, 170, 0);
+}
+.show{
+    display: none;
+   
+}
+.show h2{
+    font-size: 4rem;
+    text-align: center;
+}
+.show.active{
+    display: block;
+}

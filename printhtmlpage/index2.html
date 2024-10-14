@@ -1,0 +1,158 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>print html content with javascirpt</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        h1{
+            font-size: 3rem;
+            text-align: center;
+            font-family: sans-serif;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+        }
+        .box{
+            width: 60%;
+            height: auto;
+            padding: 20px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .text h2{
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+
+        }
+        .img-box{
+            width: 100%;
+            height: 300px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .btn{
+            padding: 10px 30px;
+            background: red;
+            font-size: 1.2rem;
+            color: #fff;
+            border: none;
+            /* pointer-events: cur; */
+           cursor: pointer;
+           border-radius:5px ;
+           margin-top: 10px;
+        }
+
+form{
+    width: 70%;
+    height: auto;
+}
+.input-box{
+    width: 100%;
+    display: flex;
+    margin: 10px;
+}
+.input-box label{
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin-right: 10px;
+    
+}
+.input-box input{
+   width: 100%;
+   padding: 10px;
+border: 2px solid red;
+}
+
+
+        @media print {
+body * {
+    display: none;
+}
+body h1{
+    display: block;
+}
+form, form *{
+    display: block;
+}
+            /* .box ,.box *{
+                display: block;
+               
+            }
+           
+            .box {
+                width: 100%;
+            }
+            .box button {
+               display: none;
+            } */
+        }
+    </style>
+    
+ </head>
+ <body>
+    <h1>print html page content</h1>
+    <!-- <div class="box">
+        <div class="img-box">
+        <img src="https://plus.unsplash.com/premium_photo-1661510050783-0a38a1471aa9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60" alt="">
+    </div>
+        <div class="text">
+            <h2>how to add print html content</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quibusdam eveniet sit, ipsam quas atque sunt corporis error. Accusamus magni alias dolorem nihil porro corporis voluptatibus repellendus sit. Deleniti ullam asperiores modi nesciunt adipisci exercitationem quod? Deleniti non facere quam maiores placeat, consequuntur ullam expedita laborum quod vero? Qui quaerat assumenda quas enim impedit labore voluptatum incidunt explicabo omnis neque blanditiis necessitatibus, est libero ducimus quidem, dicta rerum! Magni commodi aliquid dolorum est quis asperiores labore minus ipsa distinctio beatae aliquam maxime eligendi atque sint, hic repudiandae. Amet molestiae repellendus in sint saepe. Vel, dolor exercitationem iste corporis tempore et!</p>
+        </div>
+        <button class="btn">print</button>
+    </div> -->
+    <form action="#">
+        <div class="input-box">
+            <label for="name">name</label>
+            <input type="text">
+        </div>
+        <div class="input-box">
+            <label for="name">name</label>
+            <input type="text">
+        </div>
+        <div class="input-box">
+            <label for="name">name</label>
+            <input type="text">
+        </div>
+        <div class="input-box">
+            <label for="name">name</label>
+            <input type="text">
+        </div>
+        <div class="input-box">
+            <label for="name">name</label>
+            <input type="text">
+        </div>
+        <div class="input-box">
+            <label for="name">name</label>
+            <input type="text">
+        </div>
+    </form>
+    
+    <div class="btn">print</div>
+ </body>
+ <script>
+    const printbtn = document.querySelector(".btn")
+    printbtn.addEventListener("click",()=>{
+        print()
+    })
+ </script>
+ </html>
