@@ -1,5 +1,5 @@
 const randomnum = Math.floor(Math.random()* 10 + 1);
-console.log(randomnum)
+// console.log(randomnum)
 const startgame = document.querySelector(".startgame")
 const bacgroundgame = document.querySelector(".bacground-game")
 const userbtn = document.querySelector(".btn")
